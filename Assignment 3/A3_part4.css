@@ -48,4 +48,53 @@ body {
 
   .feature {
       width: 200px;
+      float: left;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      
+    }
+  
+    article img.feature {
+      float: left;
+      margin: 0 10px 10px 0;
+      max-width: 50%;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    
+    article, aside {
+      padding: 10px;
+    }
+  
+    aside .photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1px;
+    }
+    
+    aside .photos li {
+      margin: 0;
+    }
+    
+    aside .photos img {
+      width: 100%;
+    }
+    
+  @media (max-width: 515px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    
+      article img.feature {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+      }
   }
+
+  
