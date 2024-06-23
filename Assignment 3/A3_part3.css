@@ -1,5 +1,4 @@
 /* General setup */
-
 * {
   box-sizing: border-box;
 }
@@ -8,10 +7,12 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  font-family: serif site-wide ; /* Serif font for body text */
+  line-height: 1.6;
+  color: #333;
 }
 
 /* Layout */
-
 section {
   float: left;
   width: 50%;
@@ -35,11 +36,105 @@ header, section, aside, nav, footer {
   padding: 20px;
 }
 
-/* header and footer */
-
+/* Header and footer */
 header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
+  text-align: center;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-family: sans-serif; /* Sans-serif font for header */
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Section and aside styling */
+section h2, aside h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  font-family: 'Arial', sans-serif; /* Sans-serif font for headings */
+}
+
+section p, aside p, section ul, section ol {
+  margin-bottom: 1em;
+}
+
+section ul, section ol {
+  padding-left: 20px;
+  color: #a66; /* Updated color for list items */
+}
+
+/* Links */
+a {
+  color: #a66; /* Updated color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 1em;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: #a66; /* Updated color for nav links */
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+/* Additional styling */
+header, footer {
+  background-color: #f4f4f4;
+}
+
+header h1 {
+  font-family: 'Arial', sans-serif; /* Sans-serif font for header */
+  font-size: 2.5em;
+  color: #333;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+section h2 {
+  font-family: 'Arial', sans-serif; /* Sans-serif font for headings */
+  color: #333;
+}
+
+aside h2 {
+  font-family: 'Arial', sans-serif; /* Sans-serif font for headings */
+  color: #333;
+}
+
+section ul {
+  list-style-type: disc;
+  color: #a66; /* Updated color for list items */
+}
+
+section ol {
+  list-style-type: decimal;
+  color: #a66; /* Updated color for list items */
+}
